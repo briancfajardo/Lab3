@@ -53,3 +53,20 @@
     9.  Días de antelación mayor a 20 y edad mayor a 65
         - Entrada: tarifaBase =  $ 580.000, diasAntelacion = 45, edad = 80
         - Salida: $446.600 / Con 23% de descuento
+4. Condiciones límite
+
+|Variable | Límite inferior | Límite superior | Número de clase de equivalencia |
+|-----|---|-----|----|
+|Tarifa| -&#8734;/-1'000.000 | 0 | tarifa <= 0|
+| Tarifa | 1 | &#8734;/1'000'000 | tarifa > 0
+| Edad | -&#8734;/-100 | 0 | edad <= 0
+| Edad | 1 | 17 | 1 <= edad <= 17|
+| Edad | 18 | 65 | 18 <= edad <= 65|
+| Edad | 66 | 150 | 66 <= edad <= 150 |
+| Edad | 151 | &#8734;/200 | edad >= 151|
+| Días Antelación | -&#8734;/-100 | -1 | diasAntelación <= 1|
+| Días Antelación | 0 | 20 | 0 <= diasAntelación <= 20 |
+| Días Antelación | 21 | &#8734;/ 00 | diasAntelación > 20 |
+
+5. Casos de prueba 
+
