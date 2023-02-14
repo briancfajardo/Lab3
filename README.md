@@ -59,10 +59,10 @@
 |Variable | Límite inferior | Límite superior | Número de clase de equivalencia |
 |-----|---|-----|----|
 |Tarifa| -&#8734; | 0 | 1 |
-| Días Antelación | -&#8734 | -1 | 2 |
+| Días Antelación | -&#8734; | -1 | 2 |
 | Edad | -&#8734; | 0 | 3 |
 | Edad | 121 | &#8734; | 3 |
-| Días Antelación | 21 | -&#8734 | 4, 8 y 9 |
+| Días Antelación | 21 | -&#8734; | 4, 8 y 9 |
 | Edad | 1 | 17 | 5 y 8|
 | Edad | 66 | 120 | 6 7 9 |
 | Días Antelación | 0 | 19 | 7 |
