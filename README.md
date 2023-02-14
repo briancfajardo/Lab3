@@ -2,7 +2,7 @@
 ## AeroDescuentos
 ### Integrantes: Camilo Fajardo, Andrea Durán
 
-1. Los casos en los que se debería arrojar una excepción de tipo son:
+1. Los casos en los que se debería arrojar una excepción de tipo ExcepcionParametrosInvalidos son:
 
     - Tarifa menor o igual a 0
     - Días de antelación negativos
@@ -53,20 +53,22 @@
     9.  Días de antelación mayor a 20 y edad mayor a 65
         - Entrada: tarifaBase =  $ 580.000, diasAntelacion = 45, edad = 80
         - Salida: $446.600 / Con 23% de descuento
+
 4. Condiciones límite
 
 |Variable | Límite inferior | Límite superior | Número de clase de equivalencia |
 |-----|---|-----|----|
-|Tarifa| -&#8734;/-1'000.000 | 0 | tarifa <= 0|
-| Tarifa | 1 | &#8734;/1'000'000 | tarifa > 0
-| Edad | -&#8734;/-100 | 0 | edad <= 0
-| Edad | 1 | 17 | 1 <= edad <= 17|
-| Edad | 18 | 65 | 18 <= edad <= 65|
-| Edad | 66 | 150 | 66 <= edad <= 150 |
-| Edad | 151 | &#8734;/200 | edad >= 151|
-| Días Antelación | -&#8734;/-100 | -1 | diasAntelación <= 1|
-| Días Antelación | 0 | 20 | 0 <= diasAntelación <= 20 |
-| Días Antelación | 21 | &#8734;/ 00 | diasAntelación > 20 |
+|Tarifa| -&#8734; | 0 | 1 |
+| Días Antelación | -&#8734 | -1 | 2 |
+| Edad | -&#8734; | 0 | 3 |
+| Edad | 121 | &#8734; | 3 |
+| Días Antelación | 21 | -&#8734 | 4, 8 y 9 |
+| Edad | 1 | 17 | 5 y 8|
+| Edad | 66 | 120 | 6 7 9 |
+| Días Antelación | 0 | 19 | 7 |
+| Edad | 18 | 65 | 7 |
 
-5. Casos de prueba 
 
+5. Casos de prueba para condiciones límite
+
+    1. Edad 
