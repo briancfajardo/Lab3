@@ -26,7 +26,7 @@
     Nota: En el caso de las excepciones, se da por sentado que si no botó las excepciones (validadas desde el inicio) por defecto se sabe que no cumplen las condiciones necesarias para que haya error. Por ejemplo: Si se ingresa al caso donde hay descuento por ser menor de edad, entonces la tarifa debe ser mayor a 0. Por tal motivo, no consideramos necesario escribirlo explícitamente.
 
     
-3. Casos de prueba
+3. Casos de prueba clases de equivalencia
 
     1. Tarifa menor o igual a 0:
         - Entrada: tarifaBase = - $ 580.000, diasAntelacion = 45, edad = 30
