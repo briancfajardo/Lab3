@@ -68,7 +68,6 @@
 | Días Antelación | 0 | 19 | 7 |
 | Edad | 18 | 65 | 7 |
 
-
 5. Casos de prueba para condiciones límite
 
     1. Edad 
