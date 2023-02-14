@@ -69,4 +69,4 @@
 | Días Antelación | 21 | &#8734;/ 00 | diasAntelación > 20 |
 
 5. Casos de prueba 
-
+--
